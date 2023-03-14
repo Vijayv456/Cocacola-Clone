@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#coca1{
+    display: flex;
+    justify-content:start;
+    flex-wrap: wrap;
+    gap:0px;
+}
+#coca1 img{
+    margin-left: 10%;
+}
+
+
+ 
+.coca1-content h1{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.coca1-content p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1rem;
+    padding-left: 20px;
+    border-bottom: 2px solid rgb(218, 218, 218);
+    padding-bottom: 50px;
+}
+.input-types{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:100px;
+    width:100%;
+}
+.available-flover{
+    width:100%;
+    margin: 2%;
+}
+.available-flover h1{
+font-size: 1.1rem;
+
+text-align: center;
+}
+.available-flavor,.available-size{
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 5px;
+width: 100%;
+    height: 50px;
+    font-size: 1rem;
+ margin-top: 15px;
+ padding-left:35px ;
+
+}
+#shop-now{
+   width: 100%;
+    margin: 2%;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    color: white;
+    background-color: #f40000;
+    border: none;
+}
+#shop-now:hover{
+    opacity: .8;
+}
+.view-facts{
+    text-align: center;
+}
+.view-facts h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nutrition{
+    margin-left: 12%;
+    margin-top: 2%;
+    
+}
+#details{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#nutrition-facts{
+    margin-left: -5px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.details-cont{
+    display: none;
+    border: 1px solid black;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 1.1rem;
+    color:rgb(59, 59, 59);
+}
+.details-cont12{
+    display:block;
+}
+.nutrition-facts-cont{
+    display: none;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-right: 5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-top: 4%;
+    padding-right: 4%;
+  justify-content:space-around;
+
+}
+.nutrition-facts-cont12{
+    display: flex;
+}
+.content-display{
+    animation: fade .4s 1 linear;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    t0{
+        opacity: 1;
+    }
+}
+.nutrition-table{
+    border: 1px solid black;
+    padding: 1%;
+}
+.nutrition-table-ingredients{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nutrition-table-ingredients h2{
+    font-size: 1.3rem;
+}
+.nutrition-table-ingredients p{
+    font-size: 1.1rem;
+    padding-top: 10px;
+    color:rgb(59, 59, 59);
+}
+.nt-1{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    border-bottom: 3px solid rgb(48, 48, 48);
+}
+.nt-2{
+    padding-top: 5px;
+    text-align: left;
+    font-size: 1rem;
+    color:rgb(59, 59, 59) ;
+}
+.Serving-size-2{
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 10px solid rgb(48, 48, 48);
+}
+.Amount-per-serving{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 7px solid rgb(48, 48, 48);
+}
+.Amount-per-serving p{
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(59, 59, 59) ;
+}
+.Calories{
+    display: block;
+
+}
+.Calories div{
+    font-size: .8rem;
+    font-weight: bold;
+}
+.Calories p{
+    font-size: 1.9rem;
+    font-weight: bold;
+    color:rgb(59, 59, 59) ;
+}
+.Daily-Value{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: right;
+    font-size: .9rem;
+    font-weight: bold;
+    color:rgb(59, 59, 59) ;
+    border-bottom: 1px solid gray;
+}
+.total-fat{
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.Sodium-75mg,.Total-Carbohydrate-65g{
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.Total-Sugars-65g{
+    color:rgb(59, 59, 59) ;
+    border-bottom: 1px solid gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: .9rem;
+    padding-left: 15px;
+}
+.Includes-65g-Added-Sugars{
+    display: flex;
+    justify-content: right;
+    gap:30px;
+    border-bottom: 1px solid gray;
+}
+.Includes-65g-Added-Sugars div{
+    color:rgb(59, 59, 59) ;
+}
+.Includes-65g-Added-Sugars p{
+    font-size: 1.1rem;
+    font-weight: bold;
+   
+}
+.Protein{
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid gray;
+}
+.notes-ing{
+    color:rgb(59, 59, 59) ;
+    padding-top: 3px;
+    padding: 3px;
+}
+#coca-can{
+background-color: rgb(202, 199, 199);
+text-align: center;
+margin-top:10px ;
+}
+#coca-can h1{
+padding-top: 25px;
+
+}
+.vanilla-coca-cola{
+    width:100px;
+}
+.coca-can-content{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap :15px;
+    padding-bottom: 50px;
+}
+.coca-can-content1 button{
+    margin-top: 25px;
+width: 150px;
+height: 35px;
+background-color:black;
+border-radius: 30px;
+color:white;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+}
+.coca-can-content1 button a{
+    text-decoration: none;
+    color: white;
+}
+.coca-can-content1 button:hover{
+    opacity: .8;
+}
+
+
+
+@media (min-width: 400px) {
+    #coca1 img{
+        margin-left: 21%;
+    }
+}
+@media (min-width: 600px) {
+   
+    #coca1 img{
+        margin-left: 29%;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    #coca1 img{
+        margin-left: 110px;
+    }
+    .coca1-content{
+        width: 56%;
+    margin-left: 80px;
+    
+    }
+    .nutrition-table-ingredients{
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+    .coca1-content h1{
+        padding-top: 40px;
+        font-size: 3rem;
+        padding-left: 10px;
+        text-align:justify;
+    }
+    .coca1-content p{
+     
+        padding-top: 10px;
+        font-size: 1.1rem;
+        padding-left: 10px;
+        padding-bottom: 50px;
+        text-align:justify;
+    }
+    .available-flover{
+        width:280px;
+        margin: 0%;
+    }
+    .available-flover h1{
+    font-size: 1.5rem;
+    padding-left: 0;
+    text-align:justify;
+    }
+    .available-flavor,.available-size{
+        width: 300px;
+        height: 50px;
+        font-size: 1rem;
+     margin-top: 15px;
+     padding-left:35px ;
+    
+    }
+    #shop-now{
+        margin: 0;
+        width:210px;
+        margin-top: 30px;
+        height: 50px;
+        font-size: 1.3rem;
+        
+    }
+    .nutrition-facts-cont{
+        flex-wrap:nowrap;
+        margin-right: 20%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+        padding-top: 4%;
+      padding-right: 0%;
+    
+    }
+    .details-cont{
+        margin-right: 20%;
+        padding-left: 10%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    
+ 
+}

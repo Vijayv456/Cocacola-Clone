@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation{
+   
+    display: flex;
+    width:100%;
+    height:90px;
+  background-color: white;
+  justify-content: space-between;
+
+}
+abbr{
+    text-decoration: none;
+}
+.coca-icon{
+margin-left: 56px;
+    width: 80px;
+    height: 80px;
+}
+#menu-btn{
+    padding-top: 5px;
+    height: 90px;
+
+}
+#menu-btn:hover{
+border: 1px solid rgb(218, 218, 218);
+background-color: rgb(218, 218, 218);
+}
+.lap-menu{
+    display:none;
+    margin-left:-150px ;
+}
+#menu{
+    display:flex;
+    padding-top: 35px;
+    padding-left: 30px;
+    text-decoration: none;
+    list-style: none;
+  
+
+}
+#menu li{
+  margin-left: 0px;
+    /* border: 5px solid red; */
+    height: 0px;
+}
+
+.menu-hover:hover{
+    color:#f40000;
+    border-bottom:5px solid #f40000;
+}
+#menu li a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    font-size: 1rem;
+    padding-bottom: 31px;
+
+}
+.icon-navi{
+    padding-top: 35px;
+    padding-left: 0px;
+}
+#person:hover{
+color:#f40000;
+}
+#cart4{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#cart4:hover{
+    color:#f40000;
+}
+.menu-list{
+    display: none;
+    position:absolute;
+    width: 100%;
+    height: 330px;
+    background-color: rgb(218, 218, 218);
+    transition: .5s linear;
+}
+.menu-list div a{
+    text-decoration: none;
+    color: black;
+}
+.menu-list div{
+    
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid gray;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+.menu-list1{
+    display: block;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* products-div */
+
+.product-menubar{
+    display: none;
+    position: absolute;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    top:50px;
+    left:0px;
+    border: 1px solid rgb(163, 161, 161);
+    padding-top: 5px;
+}
+.product-img{
+    border-radius: 10px;
+width: 280px;
+margin: 3px 10px ;
+}
+.product-div:hover .product-menubar{
+    display: block;
+}
+.product-div{
+    position: relative;
+    display: inline-block;
+}
+
+
+/* shop */
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .lap-menu{
+        display:none;
+        margin-left:-400px ;
+    }
+    .navigation{
+      position:sticky;
+      top:0;
+    }
+    
+    .coca-icon{
+        margin-left: 20px;
+
+        }
+    .lap-menu{
+        display:flex;
+    }
+    .coca-icon{
+        width: 80px;
+        height: 80px;
+    }
+    #menu li{
+        margin-left: 45px;
+          height: 55px;
+      }
+      #menu-btn{
+        display: none;
+    
+    }
+
+}
